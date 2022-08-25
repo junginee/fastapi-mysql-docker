@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 basedir = os.path.dirname(os.path.abspath(__file__))
 
 
-from app.services.calculator import CalcuratorService
+from app.services.calculator import CalculatorService
 
 def print_menu():
     print("0. 전체 프로그램 종료")
@@ -22,7 +22,7 @@ def main():
             print("전체 프로그램을 종료합니다")
             break
         elif menu == '1 ':
-            calculatorService = CalcuratorService()   
+            calculatorService = CalculatorService()   
             first = int(input("첫번째 값 : ")) 
             second = int(input("두번째 값 : ")) 
             calculatorService. calculate(first, second)
